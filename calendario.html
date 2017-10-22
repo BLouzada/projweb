@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio Item - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.print.css">
+    <!-- Custom styles for this template -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+
+    <div class="col-md-12 col-sm-6 mb-4">
+      <div class="d-flex justify-content-between">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/100x100" alt="">
+        </a>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="index.html">
+            <button type="button" class="btn btn-secondary">Home</button>
+          </a>
+          <a href="info-curso.html">
+            <button type="button" class="btn btn-secondary">Informações do Curso</button>
+          </a>
+          <a href="galeria-eventos.html">
+            <button type="button" class="btn btn-secondary">Galeria de Eventos</button>
+          </a>
+          <a href="calendario.html">
+            <button type="button" class="btn btn-secondary">Calendário</button>
+          </a>
+          <a href="contato.html">
+            <button type="button" class="btn btn-secondary">Contato</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id='calendar'></div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src='./moment.min.js'></script>
+    <script src='./fullcalendar.min.js'></script>
+    <script>
+
+      $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+          defaultDate: '2017-10-12',
+          editable: true,
+          eventLimit: true, // allow "more" link when too many events
+          events: [
+            {
+              title: 'All Day Event',
+              start: '2017-10-01'
+            },
+            {
+              title: 'Long Event',
+              start: '2017-10-07',
+              end: '2017-10-10'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2017-10-09T16:00:00'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2017-10-16T16:00:00'
+            },
+            {
+              title: 'Conference',
+              start: '2017-10-11',
+              end: '2017-10-13'
+            },
+            {
+              title: 'Meeting',
+              start: '2017-10-12T10:30:00',
+              end: '2017-10-12T12:30:00'
+            },
+            {
+              title: 'Lunch',
+              start: '2017-10-12T12:00:00'
+            },
+            {
+              title: 'Meeting',
+              start: '2017-10-12T14:30:00'
+            },
+            {
+              title: 'Happy Hour',
+              start: '2017-10-12T17:30:00'
+            },
+            {
+              title: 'Dinner',
+              start: '2017-10-12T20:00:00'
+            },
+            {
+              title: 'Birthday Party',
+              start: '2017-10-13T07:00:00'
+            },
+            {
+              title: 'Click for Google',
+              url: 'http://google.com/',
+              start: '2017-10-28'
+            }
+          ]
+        });
+
+      });
+
+    </script>
+  </body>
+
+</html>
