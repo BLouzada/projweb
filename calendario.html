@@ -36,7 +36,7 @@
             <button type="button" class="btn btn-secondary">Informações do Curso</button>
           </a>
           <a href="galeria-eventos.html">
-            <button type="button" class="btn btn-secondary">Galeria de Eventos</button>
+            <button type="button" class="btn btn-secondary">Galeria</button>
           </a>
           <a href="calendario.html">
             <button type="button" class="btn btn-secondary">Calendário</button>
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <div id='calendar'></div>
     </div>
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -64,57 +64,32 @@
           eventLimit: true, // allow "more" link when too many events
           events: [
             {
-              title: 'All Day Event',
+              title: 'Evento de um dia inteiro',
               start: '2017-10-01'
             },
             {
-              title: 'Long Event',
+              title: 'Evento longo',
               start: '2017-10-07',
               end: '2017-10-10'
             },
             {
               id: 999,
-              title: 'Repeating Event',
+              title: 'Evento semanal',
               start: '2017-10-09T16:00:00'
             },
             {
               id: 999,
-              title: 'Repeating Event',
+              title: 'Evento semanal',
               start: '2017-10-16T16:00:00'
             },
             {
-              title: 'Conference',
+              title: 'Conferencia',
               start: '2017-10-11',
               end: '2017-10-13'
             },
             {
-              title: 'Meeting',
-              start: '2017-10-12T10:30:00',
-              end: '2017-10-12T12:30:00'
-            },
-            {
-              title: 'Lunch',
-              start: '2017-10-12T12:00:00'
-            },
-            {
-              title: 'Meeting',
-              start: '2017-10-12T14:30:00'
-            },
-            {
-              title: 'Happy Hour',
-              start: '2017-10-12T17:30:00'
-            },
-            {
-              title: 'Dinner',
-              start: '2017-10-12T20:00:00'
-            },
-            {
-              title: 'Birthday Party',
-              start: '2017-10-13T07:00:00'
-            },
-            {
-              title: 'Click for Google',
-              url: 'http://google.com/',
+              title: 'Evento com link para o site',
+              url: 'http://www.oktoberfest.org.br/ingressos/?utm_source=Google&utm_medium=search&utm_campaign=oktoberfest2017&gclid=EAIaIQobChMIxNXexoKI1wIVEgiRCh2F6AUHEAAYASAAEgLCGfD_BwE',
               start: '2017-10-28'
             }
           ]
