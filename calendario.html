@@ -17,6 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.print.css">
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
   </head>
 
   <body>
@@ -24,37 +25,77 @@
     <!-- Navigation -->
 
     <div class="col-md-12 col-sm-6 mb-4">
-      <div class="d-flex justify-content-between">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/100x100" alt="">
-        </a>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <a href="index.html">
-            <button type="button" class="btn btn-secondary">Home</button>
-          </a>
-          <a href="info-curso.html">
-            <button type="button" class="btn btn-secondary">Informações do Curso</button>
-          </a>
-          <a href="galeria-eventos.html">
-            <button type="button" class="btn btn-secondary">Galeria</button>
-          </a>
-          <a href="calendario.html">
-            <button type="button" class="btn btn-secondary">Calendário</button>
-          </a>
-          <a href="contato.html">
-            <button type="button" class="btn btn-secondary">Contato</button>
-          </a>
-        </div>
+      <div class="d-flex justify-content-between">        
+          <div class="btn-group top-menu" role="group">
+              <a class="transparency-hover" href="index.html">
+                <button type="button" class="btn button-menu">HOME</button>
+              </a>
+              <a class="transparency-hover" href="info-curso.html">
+                <button type="button" class="btn button-menu">INFORMAÇÕES DO CURSO</button>
+              </a>
+              <a class="transparency-hover" href="galeria-eventos.html">
+                <button type="button" class="btn button-menu">GALERIA</button>
+              </a>
+              <a class="transparency-hover" href="calendario.html">
+                <button type="button" class="btn button-menu">CALENDÁRIO</button>
+              </a>
+              <a class="transparency-hover" href="contato.html">
+                <button type="button" class="btn button-menu">CONTATO</button>
+              </a>
+            </div>
       </div>
     </div>
-    <div class="col-md-5">
-      <div id='calendar'></div>
-    </div>
+    <div class="row ml-4 mr-4">
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div style="cursor:pointer">
+            <a data-toggle="modal" data-target="#evento1Modal">
+              <img class="img-fluid img-thumbnail" src="images/evento1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div style="cursor:pointer">
+            <a data-toggle="modal" data-target="#evento1Modal">
+                <img class="img-fluid img-thumbnail" src="images/evento2.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div style="cursor:pointer">
+            <a data-toggle="modal" data-target="#evento1Modal">
+              <img class="img-fluid img-thumbnail" src="images/evento3.png" alt="">
+            </a>
+          </div>
+        </div>    
+      </div>
+      <div class="row ml-4 mr-4">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div style="cursor:pointer">
+              <a data-toggle="modal" data-target="#evento1Modal">
+                <img class="img-fluid img-thumbnail" src="images/evento4.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div style="cursor:pointer">
+              <a data-toggle="modal" data-target="#evento1Modal">
+                <img class="img-fluid img-thumbnail" src="images/evento5.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div style="cursor:pointer">
+              <a data-toggle="modal" data-target="#evento1Modal">
+                <img class="img-fluid img-thumbnail" src="images/evento6.png" alt="">
+              </a>
+            </div>
+          </div>    
+        </div>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src='./moment.min.js'></script>
     <script src='./fullcalendar.min.js'></script>
-    <script>
+    <!-- <script>
 
       $(document).ready(function() {
 
@@ -97,7 +138,7 @@
 
       });
 
-    </script>
+    </script> -->
   </body>
 
 </html>

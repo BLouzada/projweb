@@ -1,0 +1,29 @@
+body {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px;    
+  }
+  .transparency-hover:hover {
+    opacity: 0.5;
+    background: grey;
+  }
+  .button:hover{
+    color:white
+  }
+  .top-menu{
+    border-bottom: 1px solid grey;
+  }
+  .button-menu{
+      background-color:transparent;
+  }
+  .button-info{
+      border-radius: 0px;
+    border: 2px solid #0b9df5;
+    background: transparent;
+    color: #0b9df5;
+    font-weight: 500
+  }
+  .button-info:hover{    
+    background: #0b9df5;
+    color:#0a0a0a    
+  }
