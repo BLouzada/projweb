@@ -14,8 +14,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/portfolio-item.css" rel="stylesheet">  
+  <link href="css/portfolio-item.css" rel="stylesheet">
   <link href="bootoast.css" rel="stylesheet" type="text/css">
+  <link href="app.css" rel="stylesheet">
 
 </head>
 
@@ -23,46 +24,58 @@
 
   <!-- Navigation -->
 
-  <div class="col-md-12 col-sm-6 mb-4">
-    <div class="d-flex justify-content-between">
-      <a href="#">
-          <img class="img-fluid" src="http://placehold.it/100x100" alt="">
+  <div class="col-md-12 col-sm-6 mb-2">
+    <div class="d-flex justify-content-end">
+      <div class="btn-group top-menu" role="group">
+        <a class="transparency-hover" href="index.html">
+          <button type="button" class="btn button button-menu">HOME</button>
         </a>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="index.html">
-            <button type="button" class="btn btn-secondary">Home</button>
-          </a>
-        <a href="info-curso.html">
-            <button type="button" class="btn btn-secondary">Informações do Curso</button>
-          </a>
-        <a href="galeria-eventos.html">
-            <button type="button" class="btn btn-secondary">Galeria</button>
-          </a>
-        <a href="calendario.html">
-            <button type="button" class="btn btn-secondary">Calendário</button>
-          </a>
-        <a href="contato.html">
-            <button type="button" class="btn btn-secondary">Contato</button>
-          </a>
+        <a class="transparency-hover" href="info-curso.html">
+          <button type="button" class="btn button button-menu">INFORMAÇÕES DO CURSO</button>
+        </a>
+        <a class="transparency-hover" href="galeria-eventos.html">
+          <button type="button" class="btn button button-menu">GALERIA</button>
+        </a>
+        <a class="transparency-hover" href="calendario.html">
+          <button type="button" class="btn button button-menu">CALENDÁRIO</button>
+        </a>
+        <a class="transparency-hover" href="contato.html">
+          <button type="button" class="btn button button-menu">CONTATO</button>
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="col-md-6 form-area">
+  <div class="col-md-12">
     <form role="form">
       <br style="clear:both">
-      <h3 style="margin-bottom: 25px; text-align: center;">Deixe uma mensagem</h3>
-      <div class="form-group">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Nome/Email" required>
+      <h3 style="text-align: center;">Entre em contato</h3>      
+      <p style="text-align: center;">Gostaria de mais informações? estamos aqui para te escutar e ajudar a ir na direção certa.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+              <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Número de telefone" required>
+            </div>
+          </div>
+          <div class="col-6">
+              <div class="form-group">
+                  <textarea style="margin-top: 0px; margin-bottom: 0px; height: 148px;" class="form-control" type="textarea" id="message" placeholder="Mensagem" rows="5"></textarea>
+                </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" id="submit" class="btn button-info">
+                ENVIAR
+              </button>            
+        </div>
       </div>
-      <div class="form-group">
-        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Número de telefone" required>
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" type="textarea" id="message" placeholder="Mensagem" rows="5"></textarea>
-      </div>
-
-      <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Enviar mensagem</button>
     </form>
   </div>
 
